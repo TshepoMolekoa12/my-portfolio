@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+#navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+#navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+#navbar nav ul li {
+    margin: 0 10px;
+}
+#navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#navbar .theme-toggle {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+#home {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+}
+#home-content {
+    max-width: 50%;
+    flex: 1;
+    padding: 20px;
+}
+#home-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+#home-content p {
+    font-size: 1.2em;
+    color: #333;
+}
+body.dark-mode #home-content p {
+    color: #f4f4f4;
+}
+#home-content .icons {
+    margin-top: 20px;
+}
+#home-content .icons a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+#home-content .icons a:hover {
+    color: #007396; /* GitHub */
+}
+#home-content .icons a:nth-child(2):hover {
+    color: #0077b5; /* LinkedIn */
+}
+#home-content .icons a:nth-child(3):hover {
+    color: #d44638; /* Email */
+}
+body.dark-mode #home-content .icons a {
+    color: #f4f4f4;
+}
+#home-content .cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #59aeb19c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#home-image {
+    max-width: 50%;
+    flex: 1;
+    margin-left: 20px;
+}
+#home-image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    border-radius: 20px;
+}
+#home-image img:hover {
+    transform: scale(1.05);
+   
+}
+#skills {
+    text-align: center;
+    padding: 20px;
+}
+#skills .skill {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+#skills .skill i {
+    font-size: 3em;
+    color: #333;
+    transition: color 0.3s;
+}
+body.dark-mode #skills .skill i {
+    color: #f4f4f4;
+}
+#skills .skill p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+body.dark-mode #skills .skill p {
+    color: #f4f4f4;
+}
+#skills .skill:hover i {
+    color: #e34c26; /* HTML */
+}
+#skills .skill:nth-child(2):hover i {
+    color: #1572b6; /* CSS */
+}
+#skills .skill:nth-child(3):hover i {
+    color: #f7df1e; /* JavaScript */
+}
+#skills .skill:nth-child(4):hover i {
+    color: #4479a1; /* MySQL */
+}
+#skills .skill:nth-child(5):hover i {
+    color: #777bb4; /* PHP */
+}
+#skills .skill:nth-child(6):hover i {
+    color: #306998; /* Python */
+}
+#skills .skill:nth-child(7):hover i {
+    color: #007396; /* Java */
+}
+#skills .skill:nth-child(8):hover i {
+    color: #f34f29; /* Git */
+}
+#skills .skill:nth-child(9):hover i {
+    color: #333; /* GitHub */
+}
+#skills .skill:nth-child(10):hover i {
+    color: #f4a261; /* XAMPP */
+}
+@media (max-width: 768px) {
+    #home-content, #home-image {
+        max-width: 100%;
+        margin: 0;
+    }
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@keyframes changeText {
+    0%, 33% {
+        content: "Software Developer";
+    }
+    34%, 66% {
+        content: "Front End Developer";
+    }
+    67%, 100% {
+        content: "Back End Developer";
+    }
+}
+.animated-text::after {
+    content: "Software Developer";
+    animation: changeText 5s infinite;
+}
+#Project{
+    text-align: center;
+   padding: 25px;
+}
+
+
+#Contact {
+    text-align: center;
+    padding: 20px;
+}
+#Contact .icons {
+    margin-top: 20px;
+}
+#Contact .icons a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+#Contact .icons a:hover {
+    color: #0077b5; /* LinkedIn */
+}
+#Contact .icons a:nth-child(1):hover {
+    color: #d44638; /* Email */
+}
+body.dark-mode #Contact .icons a {
+    color: #f4f4f4;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffff;
+    color: #5d6888;
+}
